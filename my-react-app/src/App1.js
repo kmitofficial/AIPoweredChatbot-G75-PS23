@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./styles.css";
-import MyPopup from "./Popup";
+import MyPopup from "./popup";
 import QuizNo1 from "./Quiz1";
 import TalkingAnimation from "./talking";
 import NoddingAnimation from "./nodding";
