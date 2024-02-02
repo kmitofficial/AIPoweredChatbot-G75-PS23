@@ -1,0 +1,80 @@
+/* Popup.css */
+.popup {
+    position: fixed;
+    top: 52%;
+    left: 68%;
+    transform: translate3d(-50%, -50%, 0);
+    background: transparent;
+    padding: 10px;
+    height: 600px;
+    width: 700px;
+    border: 1px black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    animation: zoomInOut 1.5s ease-in-out;/*cubic-bezier(0.68, -0.55, 0.27, 1.55);/*zoomInOut 1.5s ease-in-out;*/
+  }
+
+  /*@keyframes zoomInOut {
+    0% {
+      transform: translate3d(-50%, -50%, 0) scale(0) rotateZ(45deg);
+    }
+    50% {
+      transform: translate3d(-50%, -50%, 0) scale(1.2) rotateZ(45deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) scale(1) rotateZ(0deg);
+    }
+  }*/
+
+  @keyframes zoomInOut {
+    0% {
+      transform: translate3d(-50%, -50%, 0) scale(0);
+    }
+    25%, 75% {
+      transform: translate3d(-52%, -50%, 0) scale(1.1);
+    }
+    50% {
+      transform: translate3d(-48%, -50%, 0) scale(0.9);
+    }
+  }
+
+  /*@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translate3d(-50%, -50%, 0) scale(1);
+    }
+    40% {
+      transform: translate3d(-50%, -50%, 0) scale(1.1);
+    }
+    60% {
+      transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+  }*/
+
+  /*.open {
+    animation: shake-zoom-in 1s ease-in-out both;
+    opacity: 1;
+  }*/
+  
+  /*@keyframes shake-zoom-in {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8); /* Zoom out slightly */
+    /*}
+    25% {
+      transform: translate(-50%, -50%) scale(1.1); /* Zoom in slightly */
+   /* }
+    50% {
+      transform: translate(-50%, -50%) scale(0.9); /* Zoom out slightly */
+    /*}
+    75% {
+      transform: translate(-50%, -50%) scale(1.05); /* Zoom in slightly */
+    /*}
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Stabilize at full size */
+    /*}
+  }*/
+
+  .popup-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
