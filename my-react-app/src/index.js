@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// index.js
+import React, { useState } from "react";
+import { createRoot } from 'react-dom/client';
+// import { Routes,BrowserRouter as Router,Route} from "react-router-dom";
+import App1 from "./App1";
+import App2 from "./App2";
+import App3 from "./App3";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Index = () => {
+    const [currentTab, setCurrentTab] = useState("home");
+
+    const handleMessageFromApp3 = (language) => {
+        setCurrentTab(language === "English" ? "home" : "home"); // Set the tab based on language
+
+        root.render(
+            language === "English" ? <App1 tab={currentTab} /> : <App2 tab={currentTab} />
+        );
+    };
+
+    return <App3 handleMessageFromApp3={handleMessageFromApp3} />;
+
+
+};
+
+root.render(<Index />);
