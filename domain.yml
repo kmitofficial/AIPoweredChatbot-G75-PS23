@@ -1,0 +1,172 @@
+version: '3.1'
+intents:
+- affirm
+- affirm_hi
+- bot_challenge
+- bot_challenge_hi
+- emo_fb
+- generate_text
+- goodbye
+- goodbye_hi
+- greet
+- greet_hi
+- select_language_eng
+- select_language_hi
+- text_fb
+- text_fb_hi
+- continue_eng
+- continue_hi
+- generate_text_hi
+- Feedback_ENG
+- Feedback_HI
+entities:
+- language
+- rating
+slots:
+  language:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: language
+  rating:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: rating
+actions:
+- action_delay_response
+- action_weather_eng
+- action_weather_hi
+- utter_select_language
+- utter_greet_hi
+- utter_mood_hi
+- utter_suggestions
+- utter_goodbye
+- action_feedback1
+- utter_ask_fb
+- action_gpt2_hi
+- action_gpt2_eng
+- utter_river_surface_cleaning
+- utter_river_front_development
+- utter_sewerage_treatment_capacity
+- utter_public_awareness
+- utter_industrial_effluent_monitoring
+- utter_pillars_of_namami_gange
+- utter_afforestation
+- utter_bio_diversity_conservation
+- utter_ganga_gram
+- utter_intro
+- utter_intro_hi
+- utter_pillars_of_namami_gange_hi
+- utter_sewerage_treatment_capacity_hi
+- utter_river_front_development_hi
+- utter_river_surface_cleaning_hi
+- utter_bio_diversity_conservation_hi
+- utter_afforestation_hi
+- utter_public_awareness_hi
+- utter_industrial_effluent_monitoring_hi
+- utter_ganga_gram_hi
+
+responses:
+  utter_goodjob_hi:
+  - text: अच्छा काम! आपने साहसिक कार्य पूरा कर लिया है!
+  utter_say_yes_eng:
+  - text: Please type 'yes' to continue.
+  utter_say_yes_hi:
+  - text: जारी रखने के लिए 'हाँ' टाइप करें।
+  utter_mood:
+  - text: Hope you're doing greeeat today! Cha-Cha Choudary is here to help you with this adventure!
+  utter_mood_hi:
+  - text: आशा है कि आप आज बहुत अच्छा कर रहे हैं! चाचा चौधरी आपकी इस यात्रा में आपकी मदद करने के लिए यहां हैं!
+  utter_goodbye:
+  - text: Alright! Goodbye!
+  utter_ask_fb:
+  - text: 'Please provide a rating (1-5):'
+  utter_goodjob_eng:
+  - text: Great job! You've completed the adventure!
+  utter_ask_fb_hi:
+  - text: 'कृपया एक रेटिंग दें (1-5):'
+  utter_suggestions:
+  - text: 'Please provide any suggestions you may have: '
+  utter_suggestions_hi:
+  - text: 'कृपया जो भी सुझाव हो सकते हैं, वे दें: '
+  utter_select_language:
+  - text: 'Select a language (English/Hindi): '
+  utter_greet_hi:
+  - text: नमस्ते! नमामि गंगा कार्यक्रम में आपका स्वागत है।
+  utter_goodbye_hi:
+  - text: अलविदा
+  utter_iamabot_hi:
+  - text: मैं चाचा चौधरी, नमामि गंगा प्रोग्राम का गाइड ... गंगा प्रदूषण के खिलाफ एक नायक!
+  utter_cont:
+  - text: Please ask any questions you may have. Enter 'no' to continue.
+  utter_greet:
+  - text: Welcome, dear friends, to the Namami Gange journey, where every drop counts in the story of Ganga's revival!
+  utter_iamabot:
+  - text: I'm Chacha Chaudhary, your guide to the Namami Gange Programme ... the hero against Ganga pollution!
+  utter_intro:
+  - text: Namami Gange is the superhero team for the Ganga! NMCG, the National Mission for Clean Ganga, is on a mission to purify and preserve our sacred river. They're using innovation and dedication to fight pollution, enhance water quality, and restore the Ganga's purity. Join the clean, green river adventure with Namami Gange!
+  utter_pillars_of_namami_gange:
+  - text: |
+      Namami Gange, like a powerful comic strip, sweeps pollution away with Sewage Treatment Plants, decks the Ganga in a Riverfront makeover, plants green superheroes through Afforestation, shields biodiversity, and educates everyone with a mighty Public Awareness punch!
+  utter_sewerage_treatment_capacity:
+  - text: |
+      The first step is stopping the Ganga from becoming a dumping ground. Sewage Treatment Plants are like the guardians, making sure that untreated sewage doesn't tarnish our beloved river. These plants work round the clock, ensuring that what reaches the Ganga is as pure as Ganga itself. The achievement here is a cleaner, healthier river – a true gem of our nation
+  utter_river_front_development:
+  - text: |
+      It's not just about cleaning; it's about enjoying the beauty too. Riverfront Development is like giving the Ganga a grand makeover. We're talking parks, walkways, and spots to sit and soak in the river's tranquility. This achievement is all about enhancing public access, making the Ganga a place for leisure and rejuvenation.
+  utter_river_surface_cleaning:
+  - text: |
+      Time for a bit of river pampering! River Surface Cleaning is like sending in the cleanup crew. Specially equipped boats and gadgets are on a mission to clear the river's surface of any unwanted guests. The achievement is crystal-clear water and a refreshed river ready to sparkle in the sunlight
+  utter_bio_diversity_conservation:
+  - text: |
+      The Ganga isn't just water; it's a whole ecosystem. Bio-Diversity Conservation is like creating a VIP section for our underwater friends. We're protecting aquatic plants and endangered species, making sure the Ganga remains a rich and diverse habitat. The achievement here is a thriving underwater community, ensuring the balance of nature in the Ganga.
+  utter_afforestation:
+  - text: |
+      Now, let's talk greenery. Afforestation is like giving the Ganga basin a green shield. We're planting native trees like our very own army against pollution. These trees fight soil erosion, provide homes for wildlife, and make the entire basin a haven of greenery. The achievement? A healthier, vibrant Ganga basin.
+  utter_public_awareness:
+  - text: |
+      Knowledge is the real power. Public Awareness is like turning everyone into river warriors. We're educating people about the Ganga's significance and why it deserves our protection. The achievement here is a society that understands its role in preserving our precious Ganga, making everyone a steward of the river.
+  utter_industrial_effluent_monitoring:
+  - text: |
+      Industrial Effluent Monitoring as the Ganga's bodyguard against harmful factory pollutants. We're keeping a hawk-eye on the factories, ensuring they play by the rules and don't harm our river. It's a vigilant sentinel, minimizing harmful discharges and ensuring the Ganga flows untainted. The factories may hum, but they won't harm the melody of the Ganga!
+  utter_ganga_gram:
+  - text: |
+      Gange Gram, or model villages, is like creating little paradises. We're educating local communities, building eco-friendly havens, and setting examples of how to live in harmony with the Ganga. The achievement? Villages that thrive while ensuring the Ganga remains pristine, setting a path for others to follow.
+  utter_intro_hi:
+  - text: नमामि गंगे गंगा के लिए सुपरहीरो टीम है! राष्ट्रीय स्वच्छ गंगा मिशन, या एनएमसीजी, हमारी पवित्र नदी को शुद्ध करने और संरक्षित करने के लिए एक मिशन पर है। वे नवाचार और समर्पण का उपयोग कर रहे हैं प्रदूषण से लड़ने, जल गुणवत्ता को बढ़ाने, और गंगा की पवित्रता को पुनर्स्थापित करने के लिए। नमामि गंगे के साथ साफ, हरा नदी की यात्रा में शामिल हों!
+  utter_pillars_of_namami_gange_hi:
+  - text: |
+      नमामि गंगे है हमारी गंगा का सुपरहीरो टीम। 'सीवेज ट्रीटमेंट प्लांट्स' से शुरू होकर 'रिवरफ्रंट डेवेलपमेंट', 'अफोरेस्टेशन', 'बायो-डाइवर्सिटी कंसर्वेशन', 'रिवर सरफेस क्लीनिंग', 'पब्लिक अवेयरनेस', 'इंडस्ट्रियल एफ्लुएंट मॉनिटरिंग', और 'गंगे ग्राम'। सभी मिलकर बना रहे हैं गंगा को और भी स्वच्छ और हरित। यह है हमारे सुपरहीरो लीग की कहानी!
+  utter_sewerage_treatment_capacity_hi:
+  - text: |
+      गंगा को असुध पानी से बचाना है। सीवेज ट्रीटमेंट प्लांट्स, या STPs, जैसे कि गंगा के स्वच्छता के लिए पुनर्निर्माण के प्रयास, सुनिश्चित करते हैं कि जब भी पानी गंगा में मिलता है, वह शुद्ध हो। इस से होने वाला अच्छी बात यह है कि अनजाने में ही अनचाहे पदार्थ गंगा में पहुंचने की संभावना बहुत कम हो जाती है, और गंगा अपनी प्राकृतिकता को बनाए रख सकती है।
+  utter_river_front_development_hi:
+  - text: |
+      साफ़ता के अलावा, हम चाहते हैं कि लोग गंगा का आनंद लें भी! रिवरफ्रंट डेवेलपमेंट वह चीज़ है जो किसी को भी गंगा के किनारे का एक नया चेहरा देती है। इससे सार्वजनिक पहुंच में सुधार होता है और लोगों के लिए लेजर एरिया बनाने का एक अवसर मिलता है। सोचिए, गंगा के किनारे पर टहलना और दृश्य का आनंद लेना - यही हम चाहते हैं!
+  utter_river_surface_cleaning_hi:
+  - text: |
+      नदी के स्पा दिन का समय आ गया है! रिवर सरफेस क्लीनिंग, या नदी की सफाई, गंगा के लिए एक सौंदर्य उपचार है। विशेष नावें और यंत्रों का उपयोग विभिन्न कचरे को हटाने के लिए हो रहा है। अच्छा यही है कि निर्दूषितता का मतलब है सभी के लिए शुद्ध पानी।
+  utter_bio_diversity_conservation_hi:
+  - text: |
+      अब हम अंडरवॉटर दोस्तों की बात करें। बायो-डाइवर्सिटी कंसर्वेशन वह है जैसे कि गंगा के लिए एक सुरक्षित आश्रय बनाना। यह गंगा में एक वन्य प्राणियों के लिए संरक्षित क्षेत्र बनाने की तरह है। हम सुनिश्चित कर रहे हैं कि नदी की धनी बायोडाइवर्सिटी को बचाएं!
+  utter_afforestation_hi:
+  - text: |
+      "गंगा की खाद्यक्षेत्र विशाल है, और हम बड़ा सोच रहे हैं! अफोरेस्टेशन वह है जैसे हम हरियाली का कवच बांध रहे हैं। जन्मीय पेड़ों को लगाना न केवल गंगा के क्षेत्र को हरित बनाता है बल्कि यह प्रदूषण से लड़ता है, जैव विविधता को बढ़ावा देता है और ज़मीन की धार रोकता है। यह प्राकृतिक सुंदरता की रक्षा के लिए एक जीत है और नहीं हो सकता है।
+  utter_public_awareness_hi:
+  - text: |
+      ज्ञान शक्ति है! पब्लिक अवेयरनेस वह चीज़ है जो सभी को बताती है कि गंगा महत्त्वपूर्ण क्यों है। हम लोगों को नदी संरक्षण के महत्व के बारे में शिक्षित कर रहे हैं, ताकि वे खुद गंगा के संरक्षण के रक्षक बन जाएं। यह ऐसे सभी को पर्यावरण के सुपरहीरो में बदलने का है!
+  utter_industrial_effluent_monitoring_hi:
+  - text: |
+      इंडस्ट्रियल एफ्लुएंट मॉनिटरिंग हमारा एक महत्वपूर्ण तरीका है जो बताता है कि हमें सभी को मिलकर गंगा को हानिकारक चीजों से बचाना है। यह कोई डराने वाली बात नहीं है, बल्कि एक साझा करने वाला उपाय है ताकि हम सभी मिलकर नदी का सही से ख्याल रख सकें।
+  utter_ganga_gram_hi:
+  - text: |
+      चलो, छोटे जन्नत बनाते हैं गंगा के साथ! गंगा ग्राम, या मॉडल गाँव, सुस्त जीवन के लिए है। हम स्थानीय समुदायों को शिक्षित कर रहे हैं, उन्हें जीवन का एक संतुलित रूप में बनाए रखने के लिए समर्थन कर रहे हैं। यह उन गाँवों को बनाने का एक तरीका है जो गंगा के साथ सहज संबंध बनाए रखने का एक उदाहरण स्थापित कर रहे हैं!
+  utter_cont_hi:
+  - text: |
+      कृपया पूछें जो भी प्रश्न हो सकते हैं। जारी रखने के लिए 'नहीं' दर्ज करें।
+session_config:
+  session_expiration_time: 50
+  carry_over_slots_to_new_session: false
