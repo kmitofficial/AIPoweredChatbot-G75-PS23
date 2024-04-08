@@ -2,7 +2,7 @@ import g4f
 from rasa_sdk import Action, Tracker
 from typing import Any, Text, Dict, List
 from rasa_sdk.executor import CollectingDispatcher
-from g4f.Provider import You
+from g4f.Provider import Liaobots
 import random
 import requests
 import sqlite3
@@ -41,7 +41,7 @@ class GPT3ChatCompletionAction(Action):
             return []
 
         _providers = [
-            g4f.Provider.You,
+            g4f.Provider.Liaobots,
         ]
         chacha_lines_eng = [
             "Chacha Chaudhary's brain works faster than a computer!",
@@ -111,7 +111,7 @@ class GPT3ChatCompletionActionHindi(Action):
             return []
 
         _providers = [
-            g4f.Provider.You,
+            g4f.Provider.Liaobots,
         ]
     
         chacha_lines_hi = [
