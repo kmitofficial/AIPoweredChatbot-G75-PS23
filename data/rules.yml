@@ -1,0 +1,50 @@
+version: "3.1"
+
+rules:
+- rule: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: bot challenge hindi
+  steps:
+  - intent: bot_challenge_hi
+  - action: utter_iamabot_hi
+
+- rule: getting into feedback1
+  steps:
+  - intent: text_fb
+  - action: action_feedback1
+  - action: action_restart
+
+- rule: getting into feedback1_hi
+  steps:
+  - intent: text_fb_hi
+  - action: action_feedback1
+  - action: action_restart
+  
+- rule: say goodbye anytime user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_restart
+
+- rule: say goodbye anytime user says goodbye hindi
+  steps:
+  - intent: goodbye_hi
+  - action: utter_goodbye_hi
+  - action: action_restart
+
+- rule: continue for english
+  steps:
+  - action: utter_cont
+  - intent: generate_text
+  - action: action_gpt2_eng
+  wait_for_user_input: false
+
+- rule: continue for hindi
+  steps:
+  - action: utter_cont_hi
+  - intent: generate_text_hi
+  - action: action_gpt2_hi
+  wait_for_user_input: false

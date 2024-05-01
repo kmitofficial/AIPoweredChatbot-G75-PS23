@@ -1,0 +1,288 @@
+version: "3.1"
+nlu:
+
+- intent: select_language_eng
+  examples: |
+    - [English](language)
+    - [ENGLISH](language)
+    - [english](language)
+    - [eng](language)
+- intent: select_language_hi
+  examples: |
+    - [Hindi](language)
+    - [HINDI](language)
+    - [hindi](language)
+- intent: greet_hi
+  examples: |
+    - नमस्ते
+    - हैलो
+    - कैसे हो
+    - राम राम
+    - क्या हाल है
+    - हाय
+    - शुभ प्रभात
+    - शुभ संध्या
+- intent: affirm_hi
+  examples: |
+    - हाँ
+    - ह
+    - बिल्कुल
+    - बेशक
+    - यह अच्छा लगता है
+    - सही
+
+- intent: Feedback_ENG
+  examples: |
+    - I would like to give feedback in english
+    - Feedback_eng
+    - FBENG
+    - Giving feedback in english
+
+
+- intent: Feedback_HI
+  examples: |
+    - I would like to give feedback in hindi
+    - Feedback_hi
+    - FBHI
+    - Giving feedback in hindi
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: goodbye_hi
+  examples: |
+    - अलविदा
+    - अलविदा फिर मिलेंगे
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - it helped
+    - yess
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: bot_challenge_hi
+  examples: |
+    - क्या आप एक बॉट हैं?
+    - क्या आप एक इंसान हैं?
+    - क्या मैं एक बॉट से बात कर रहा हूं?
+    - क्या मैं एक इंसान से बात कर रहा हूं?
+- intent: text_fb
+  examples: |
+    - very nice experience
+    - super
+    - terrible
+    - very bad
+    - could be better
+    - could've been better
+    - could've been trained better
+    - i learnt well!
+    - i learnt a lot!
+    - it's the best
+    - i liked it
+    - better than i thought
+    - satisfactory experience
+    - not satisfactory
+    - below expectations
+    - exceeded expectations
+    - informative and helpful
+    - not very informative
+    - confusing information
+    - very informative content
+    - easy to understand
+    - difficult to understand
+    - engaging content
+    - not engaging enough
+    - insightful and valuable
+    - lacking depth
+    - too basic for me
+    - provided great insights
+    - insightful and practical
+    - actionable advice given
+    - needs more actionable advice
+    - clear and concise content
+    - content lacks clarity
+- intent: text_fb_hi
+  examples: |
+    - बहुत अच्छा अनुभव
+    - बहुत बढ़िया
+    - बहुत खराब
+    - बहुत बुरा
+    - बेहतर हो सकता था
+    - बेहतर तरीके से प्रशिक्षित किया जा सकता था
+    - मैंने अच्छी तरह से सीखा!
+    - मैंने बहुत कुछ सीखा!
+    - यह सबसे अच्छा है
+    - मुझे यह पसंद आया
+    - मेरी उम्मीदों से बेहतर
+
+- intent: continue_eng
+  examples: |
+    - cont
+    - continue
+    - please continue
+    - go on
+    - go ahead
+
+- intent: continue_hi
+  examples: |
+    - जारी रखें
+    - जारी रखो
+    - जारी करें
+    - आगे बढ़ें
+    - आगे बढ़ो
+
+- intent: generate_text
+  examples: |
+    - no
+    - What is the Namami Gange program?
+    - What is the Namami Gange program all about?
+    - What is the Namami Gange program about?
+    - What is the Namami Gange program for?
+    - What are the goals of the Namami Gange program?
+    - What are the objectives of the Namami Gange program?
+    - What are the challenges to cleaning up the Ganga river?
+    - What are the major components of the Namami Gange program?
+    - What progress has been made under the Namami Gange program so far?
+    - How can the public participate in the Namami Gange program?
+    - What are the benefits of cleaning up the Ganga river?
+    - What are the benefits of cleaning up the Ganga river basin?
+    - What are the historical and cultural significance of the Ganga river?
+    - What are the major tributaries of the Ganga river?
+    - What are the major rivers that flow into the Ganga river?
+    - What are the major rivers that flow out of the Ganga river?
+    - What are the major rivers that flow through the Ganga river basin?
+    - What is the length of the Ganga river?
+    - What is the total area of the Ganga river basin?
+    - What is the total population of the Ganga river basin?
+    - Where does the Ganga river originate and where does it flow into?
+    - What are the major cities and towns located along the Ganga river?
+    - What are the major religious sites located along the Ganga river?
+    - What are the major tourist attractions located along the Ganga river?
+    - What are the major industries and economic activities that take place along the Ganga river?
+    - What are the major environmental problems that the Ganga river faces?
+    - What are the major conservation efforts that are being undertaken to protect the Ganga river?
+    - What are the different types of pollution that affect the Ganga river?
+    - What are the impacts of pollution on the Ganga river ecosystem?
+    - What are the impacts of pollution on the Ganga river biodiversity?
+    - How does the pollution in the Ganga river affect human health?
+    - What are the different ways to reduce pollution in the Ganga river?
+    - What are the different ways to conserve water resources in the Ganga river basin?
+    - What are the different ways to conserve biodiversity in the Ganga river basin?
+    - What are the different ways to conserve wildlife in the Ganga river basin?
+    - What are the different ways to conserve forests in the Ganga river basin?
+    - What are the different ways to conserve wetlands in the Ganga river basin?
+    - What are the different ways to conserve grasslands in the Ganga river basin?
+    - What are the different ways to promote sustainable development in the Ganga river basin?
+    - What are the different ways to promote sustainable tourism in the Ganga river basin?
+    - What would the Ganga river be like if it were completely clean?
+    - What would the Ganga river be like if it were completely free of pollution?
+    - What would the Ganga river be like if it were completely free of human activity?
+    - What would the Ganga river be like if it were completely free of industrial activity?
+    - What would the Ganga river's message be to humanity if it could speak?
+    - What would the Ganga river say to humanity if it could speak?
+    - What would be the most effective way to raise awareness about the importance of cleaning up the Ganga river?
+    - What would be the most effective way to raise awareness about the importance of protecting the Ganga river?
+    - What would you do to help clean up the Ganga river?
+    - What would you do to help protect the Ganga river?
+    - What would you do to help conserve the Ganga river?
+    - What kind of future do you envision for the Ganga river?
+    - What kind of future do you envision for the Ganga river basin?
+    - What kind of future do you envision for the people living in the Ganga river basin?
+    - what is nmcg
+    - What are the main pillars of the Namami Gange Programme?
+    - List the components of Namami Gange
+    - Tell me about the focus areas of Namami Gange
+    - What does the program include?
+    - What is the status of sewerage treatment capacity?
+    - How many sewage projects are completed?
+    - Tell me about sewerage treatment projects.
+    - Give details about sewage management.
+    - What is the progress in river-front development?
+    - Tell me about the Ghats and Crematoria projects.
+    - How many Ghats are being modernized?
+    - Explain river-front development initiatives.
+    - How is river surface cleaning being carried out?
+    - Tell me about the efforts to clean the river surface.
+    - Explain the collection of floating solid waste.
+    - What locations have river surface cleaning services?
+    - Explain the bio-diversity conservation efforts.
+    - How is biodiversity being conserved in the Ganga?
+    - Tell me about wildlife and aquatic species restoration in Ganga.
+    - What is the afforestation component of the program?
+    - Explain the afforestation projects along the Ganga.
+    - How is afforestation contributing to Ganga rejuvenation?
+    - What activities have been carried out for public awareness?
+    - Tell me about awareness events and campaigns.
+    - Explain the role of public awareness in the program.
+    - How is industrial effluent monitored in the Ganga?
+    - Tell me about the regulation of Grossly Polluting Industries (GPIs).
+    - Explain the inspection and compliance verification process.
+    - What is the Ganga Gram initiative?
+    - Tell me about the Gram Panchayats on the bank of River Ganga.
+    - Explain the construction of toilets and model villages.
+
+- intent: generate_text_hi
+  examples: |
+    - nahi
+    - nhi
+    - नहीं
+    - नमामि गंगे क्या है?
+    - क्या आप मुझे नमामि गंगे के बारे में बता सकते हैं?
+    - नमामि गंगे की व्याख्या करें
+    - नमामि गंगे के उद्देश्य क्या हैं?
+    - नमामि गंगे के मुख्य स्तंभ क्या हैं?
+    - नमामि गंगे के घटकों की सूची बताएं
+    - मुझे नमामि गंगे के क्षेत्रों के बारे में बताएं
+    - कार्यक्रम में क्या शामिल है?
+    - सीवेज उपचार क्षमता की स्थिति क्या है?
+    - कितने सीवेज परियोजनाएं पूर्ण हुई हैं?
+    - सीवेज प्रबंधन के बारे में बताएं
+    - सीवेज प्रबंधन के विवरण दें
+    - नदी के किनारे के विकास में कैसा प्रगति हो रहा है?
+    - मुझे घाट और श्मशान परियोजनाओं के बारे में बताएं।
+    - कितने घाट मॉडर्नाइज किए जा रहे हैं?
+    - नदी के किनारे के विकास की पहल का विवरण करें।
+    - नदी की सतह को कैसे साफ किया जा रहा है?
+    - मुझे नदी की सतह को साफ करने के प्रयासों के बारे में बताएं।
+    - तैरते हुए ठोस कचरे का संग्रहण का विवरण करें।
+    - कौन-कौन से स्थानों पर नदी की सतह को साफ करने की सेवाएं हैं?
+    - बायो-डाइवर्सिटी संरक्षण प्रयासों का विवरण करें।
+    - गंगा में बायोडाइवर्सिटी कैसे संरक्षित की जा रही है?
+    - मुझे गंगा में वन्यजीव और जलजीव संरक्षण के बारे में बताएं।
+    - कार्यक्रम का अफोरेस्टेशन घटक क्या है?
+    - गंगा के साथ अफोरेस्टेशन परियोजनाओं को समझाएं।
+    - अफोरेस्टेशन गंगा पुनर्जीवन में कैसे योगदान कर रहा है?
+    - सार्वजनिक जागरूकता के लिए कौन-कौनसी गतिविधियां की गई हैं?
+    - मुझे जागरूकता के कार्यक्रम और अभियानों के बारे में बताएं।
+    - कार्यक्रम में सार्वजनिक जागरूकता की भूमिका को समझाएं।
+    - गंगा में औद्योगिक प्रदूषण कैसे मॉनिटर किया जाता है?
+    - कृपया मुझे बड़ी मात्रा में प्रदूषित उद्योगों (GPIs) के नियमन के बारे में बताएं
+    - निरीक्षण और अनुपालन सत्यापन प्रक्रिया को समझाएं।
+    - गंगा ग्राम पहल क्या है?
+    - मुझे गंगा नदी के किनारे स्थित ग्राम पंचायतों के बारे में बताएं।
+    - शौचालयों और मॉडल गाँवों का निर्माण समझाएं।
+- intent: emo_fb
+  examples: |
+    - [1](rating)
+    - [2](rating)
+    - [3](rating)
+    - [4](rating)
+    - [5](rating)
